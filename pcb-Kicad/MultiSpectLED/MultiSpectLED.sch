@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MultiSpectLED-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -36,18 +35,6 @@ F 2 "MultiSpectLED:LuxeonRebelColor" H 5750 4389 50  0000 C CNN
 F 3 "~" H 5750 4200 50  0001 C CNN
 F 4 "1416-1029-1-ND" H 5750 4200 50  0001 C CNN "Digikey Part Number"
 	1    5750 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L MultiSpectLED:LED_PAD D3
-U 1 1 61F8BD01
-P 5700 1200
-F 0 "D3" H 5700 1571 50  0000 C CNN
-F 1 "280nm" H 5700 1480 50  0000 C CNN
-F 2 "MultiSpectLED:Luminus_XBT3535" H 5700 1389 50  0000 C CNN
-F 3 "~" H 5700 1200 50  0001 C CNN
-F 4 "1214-XBT-3535-UV-A130-CD270-00CT-ND" H 5700 1200 50  0001 C CNN "Digikey Part Number"
-	1    5700 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -205,105 +192,6 @@ F 3 "" H 2800 6000 50  0001 C CNN
 	1    2800 6000
 	1    0    0    -1  
 $EndComp
-$Comp
-L MultiSpectLED:PAM2804 U1
-U 1 1 61FC747F
-P 4650 1000
-F 0 "U1" H 4650 1325 50  0000 C CNN
-F 1 "PAM2804" H 4650 1234 50  0000 C CNN
-F 2 "MultiSpectLED:SOT-23-5" H 4400 1000 50  0001 C CNN
-F 3 "" H 4400 1000 50  0001 C CNN
-F 4 "PAM2804AAB010DICT-ND" H 4650 1000 50  0001 C CNN "Digikey Part Number"
-	1    4650 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L MultiSpectLED:R R1
-U 1 1 61FC7C42
-P 5400 1350
-F 0 "R1" H 5470 1396 50  0000 L CNN
-F 1 "0.2" H 5470 1305 50  0000 L CNN
-F 2 "MultiSpectLED:R_0805_2012Metric" V 5330 1350 50  0001 C CNN
-F 3 "~" H 5400 1350 50  0001 C CNN
-F 4 "RL12S.20FCT-ND" H 5400 1350 50  0001 C CNN "Digikey Part Number"
-	1    5400 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L MultiSpectLED:L L1
-U 1 1 61FC84DC
-P 5300 900
-F 0 "L1" V 5490 900 50  0000 C CNN
-F 1 "4.7u" V 5399 900 50  0000 C CNN
-F 2 "MultiSpectLED:L_1007_2518Metric" H 5300 900 50  0001 C CNN
-F 3 "~" H 5300 900 50  0001 C CNN
-F 4 "587-1621-1-ND" H 5300 900 50  0001 C CNN "Digikey Part Number"
-	1    5300 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MultiSpectLED:C C1
-U 1 1 61FC8EFB
-P 6350 1350
-F 0 "C1" H 6465 1396 50  0000 L CNN
-F 1 "C" H 6465 1305 50  0000 L CNN
-F 2 "MultiSpectLED:C_0805_2012Metric" H 6388 1200 50  0001 C CNN
-F 3 "~" H 6350 1350 50  0001 C CNN
-F 4 "490-3886-1-ND" H 6350 1350 50  0001 C CNN "Digikey Part Number"
-	1    6350 1350
-	1    0    0    -1  
-$EndComp
-Text Label 5700 1400 0    50   ~ 0
-THERMAL_PAD
-$Comp
-L MultiSpectLED:C C2
-U 1 1 61FCE254
-P 3800 900
-F 0 "C2" V 3548 900 50  0000 C CNN
-F 1 "C" V 3639 900 50  0000 C CNN
-F 2 "MultiSpectLED:C_0805_2012Metric" H 3838 750 50  0001 C CNN
-F 3 "~" H 3800 900 50  0001 C CNN
-F 4 "490-3886-1-ND" H 3800 900 50  0001 C CNN "Digikey Part Number"
-	1    3800 900 
-	-1   0    0    1   
-$EndComp
-Text Label 3650 1050 2    50   ~ 0
-GND
-Text Label 3650 750  2    50   ~ 0
-+5V
-Wire Wire Line
-	5850 1200 6100 1200
-Wire Wire Line
-	5550 1200 5400 1200
-Wire Wire Line
-	6350 1500 5400 1500
-Text Label 6600 1500 0    50   ~ 0
-GND
-Wire Wire Line
-	6600 1500 6350 1500
-Connection ~ 6350 1500
-Wire Wire Line
-	6100 1200 6100 900 
-Wire Wire Line
-	6100 900  5450 900 
-Connection ~ 6100 1200
-Wire Wire Line
-	6100 1200 6350 1200
-Wire Wire Line
-	5150 900  5000 900 
-Wire Wire Line
-	5400 1200 5000 1200
-Connection ~ 5400 1200
-Wire Wire Line
-	4300 1050 3800 1050
-Connection ~ 3800 1050
-Wire Wire Line
-	3800 750  3650 750 
-Wire Wire Line
-	4300 750  3800 750 
-Wire Wire Line
-	4300 750  4300 900 
-Connection ~ 3800 750 
 $Comp
 L MultiSpectLED:TeensyLC U2
 U 1 1 61FFC47B
@@ -476,7 +364,7 @@ F 0 "J2" H 1157 5867 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1157 5776 50  0000 C CNN
 F 2 "MultiSpectLED:USB_C_Receptacle_Amphenol_12401610E4-2A" H 1200 5000 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 5000 50  0001 C CNN
-F 4 "CP-036AHPJCT-ND" H 1050 5000 50  0001 C CNN "Digikey Part Number"
+F 4 "12401610E4#2ACT-ND" H 1050 5000 50  0001 C CNN "Digikey Part Number"
 	1    1050 5000
 	1    0    0    -1  
 $EndComp
@@ -528,10 +416,6 @@ Text Label 600  2850 0    50   ~ 0
 PWM_D3_280nm
 Wire Wire Line
 	600  2850 1250 2850
-Text Label 3650 1200 0    50   ~ 0
-PWM_D3_280nm
-Wire Wire Line
-	4300 1200 3650 1200
 Wire Wire Line
 	1050 6350 600  6350
 Wire Wire Line
@@ -2066,22 +1950,6 @@ Text Label 2050 7100 0    50   ~ 0
 Text Notes 700  4050 0    79   ~ 0
 USB-C 5V 4A power adapter \nDigikey: 237-1419-ND
 $Comp
-L MultiSpectLED:R R16
-U 1 1 62137D31
-P 3500 1200
-F 0 "R16" H 3570 1246 50  0000 L CNN
-F 1 "100K" H 3570 1155 50  0000 L CNN
-F 2 "MultiSpectLED:R_0402_1005Metric" V 3430 1200 50  0001 C CNN
-F 3 "~" H 3500 1200 50  0001 C CNN
-F 4 "RC1005F104CS" H 3500 1200 50  0001 C CNN "Digikey Part Number"
-	1    3500 1200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3350 1050 3350 1200
-Wire Wire Line
-	3350 1050 3800 1050
-$Comp
 L MultiSpectLED:R R17
 U 1 1 62159959
 P 3450 1950
@@ -2305,4 +2173,255 @@ Wire Wire Line
 	3500 6950 3500 7100
 Wire Wire Line
 	3500 6950 3950 6950
+$Comp
+L MultiSpectLED:PAM2841 U17
+U 1 1 62CF215B
+P 4600 -850
+F 0 "U17" H 4600 -435 50  0000 C CNN
+F 1 "PAM2841" H 4600 -526 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 4700 -450 50  0001 C CNN
+F 3 "" H 4350 -850 50  0001 C CNN
+	1    4600 -850
+	1    0    0    -1  
+$EndComp
+Text Label 3100 -1400 2    50   ~ 0
++5V
+Text Label 5150 -700 2    50   ~ 0
+GND
+Text Label 4250 -450 0    50   ~ 0
+GND
+Text Label 3550 -900 0    50   ~ 0
+PWM_D3_280nm
+$Comp
+L MultiSpectLED:L L16
+U 1 1 62D3A4ED
+P 4300 -1400
+F 0 "L16" V 4490 -1400 50  0000 C CNN
+F 1 "22u" V 4399 -1400 50  0000 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-50xx" H 4300 -1400 50  0001 C CNN
+F 3 "~" H 4300 -1400 50  0001 C CNN
+F 4 "587-NRS5040T220MMGKCT-ND" H 4300 -1400 50  0001 C CNN "Digikey Part Number"
+	1    4300 -1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MultiSpectLED:LED_PAD D17
+U 1 1 62D3D434
+P 5950 -800
+F 0 "D17" H 5950 -429 50  0000 C CNN
+F 1 "280nm" H 5950 -520 50  0000 C CNN
+F 2 "MultiSpectLED:Luminus_XBT3535" H 5950 -611 50  0000 C CNN
+F 3 "~" H 5950 -800 50  0001 C CNN
+F 4 "1214-XBT-3535-UV-A130-CD270-00CT-ND" H 5950 -800 50  0001 C CNN "Digikey Part Number"
+	1    5950 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C33
+U 1 1 62D55B2A
+P 3250 -850
+F 0 "C33" H 3365 -804 50  0000 L CNN
+F 1 "1u" H 3365 -895 50  0000 L CNN
+F 2 "MultiSpectLED:C_0805_2012Metric" H 3288 -1000 50  0001 C CNN
+F 3 "~" H 3250 -850 50  0001 C CNN
+F 4 "1276-1066-1-ND" H 3250 -850 50  0001 C CNN "Digi-Key_PN"
+	1    3250 -850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C31
+U 1 1 62D587BB
+P 3900 -1250
+F 0 "C31" H 3785 -1296 50  0000 R CNN
+F 1 "10u" H 3785 -1205 50  0000 R CNN
+F 2 "MultiSpectLED:C_0805_2012Metric" H 3938 -1400 50  0001 C CNN
+F 3 "~" H 3900 -1250 50  0001 C CNN
+F 4 "1276-2891-1-ND" H 3900 -1250 50  0001 C CNN "Digi-Key_PN"
+	1    3900 -1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 -1400 3250 -1400
+Connection ~ 3250 -1400
+$Comp
+L Device:C C34
+U 1 1 62E04A35
+P 3900 -600
+F 0 "C34" H 4015 -554 50  0000 L CNN
+F 1 "100n" H 4015 -645 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3938 -750 50  0001 C CNN
+F 3 "~" H 3900 -600 50  0001 C CNN
+F 4 "1276-1043-1-ND" H 3900 -600 50  0001 C CNN "Digi-Key_PN"
+	1    3900 -600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 -450 4200 -450
+Wire Wire Line
+	4250 -700 4200 -700
+Wire Wire Line
+	4200 -700 4200 -450
+Connection ~ 4200 -450
+Wire Wire Line
+	4200 -450 4250 -450
+Wire Wire Line
+	3900 -800 3900 -750
+Wire Wire Line
+	3900 -800 4250 -800
+$Comp
+L MultiSpectLED:R R34
+U 1 1 62EA7ACE
+P 3500 -600
+F 0 "R34" H 3570 -554 50  0000 L CNN
+F 1 "100K" H 3570 -645 50  0000 L CNN
+F 2 "MultiSpectLED:R_0402_1005Metric" V 3430 -600 50  0001 C CNN
+F 3 "~" H 3500 -600 50  0001 C CNN
+F 4 "RC1005F104CS" H 3500 -600 50  0001 C CNN "Digikey Part Number"
+	1    3500 -600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 -450 3900 -450
+Connection ~ 3900 -450
+Wire Wire Line
+	3500 -750 3500 -900
+Wire Wire Line
+	3500 -900 4250 -900
+Wire Wire Line
+	3250 -1400 3250 -1000
+Wire Wire Line
+	4250 -1000 3250 -1000
+Connection ~ 3250 -1000
+Wire Wire Line
+	3250 -700 3250 -450
+Wire Wire Line
+	3250 -450 3500 -450
+Connection ~ 3500 -450
+Connection ~ 3900 -1400
+Wire Wire Line
+	3900 -1400 4150 -1400
+Wire Wire Line
+	3250 -1400 3900 -1400
+Text Label 3950 -1100 0    50   ~ 0
+GND
+Wire Wire Line
+	3900 -1100 3950 -1100
+$Comp
+L Device:D_Schottky D16
+U 1 1 62F79EE4
+P 5100 -1400
+F 0 "D16" H 5100 -1617 50  0000 C CNN
+F 1 "D_Schottky" H 5100 -1526 50  0000 C CNN
+F 2 "Diode_SMD:D_TUMD2" H 5100 -1400 50  0001 C CNN
+F 3 "~" H 5100 -1400 50  0001 C CNN
+F 4 "MSS2P2-M3/89AGICT-ND" H 5100 -1400 50  0001 C CNN "Digi-Key_PN"
+	1    5100 -1400
+	-1   0    0    1   
+$EndComp
+Text Label 5950 -600 0    50   ~ 0
+THERMAL_PAD
+$Comp
+L Device:R R33
+U 1 1 63035DFA
+P 5300 -650
+F 0 "R33" H 5370 -604 50  0000 L CNN
+F 1 ".5" H 5370 -695 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5230 -650 50  0001 C CNN
+F 3 "~" H 5300 -650 50  0001 C CNN
+F 4 "CSR0603FKR500CT-ND" H 5300 -650 50  0001 C CNN "Digi-Key_PN"
+	1    5300 -650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 -800
+Wire Wire Line
+	5600 -800 5300 -800
+$Comp
+L Device:C C32
+U 1 1 6305D4E8
+P 6300 -1250
+F 0 "C32" H 6415 -1204 50  0000 L CNN
+F 1 "1u" H 6415 -1295 50  0000 L CNN
+F 2 "MultiSpectLED:C_0805_2012Metric" H 6338 -1400 50  0001 C CNN
+F 3 "~" H 6300 -1250 50  0001 C CNN
+F 4 "1276-1066-1-ND" H 6300 -1250 50  0001 C CNN "Digi-Key_PN"
+	1    6300 -1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 -500 6300 -500
+Wire Wire Line
+	6300 -500 6300 -1100
+Connection ~ 5600 -500
+Wire Wire Line
+	6100 -800 6100 -1400
+Connection ~ 6100 -1400
+Wire Wire Line
+	6100 -1400 6300 -1400
+$Comp
+L Device:R R31
+U 1 1 630CD03F
+P 5250 -1250
+F 0 "R31" H 5320 -1204 50  0000 L CNN
+F 1 "9.1k" H 5320 -1295 50  0000 L CNN
+F 2 "MultiSpectLED:R_0402_1005Metric" V 5180 -1250 50  0001 C CNN
+F 3 "~" H 5250 -1250 50  0001 C CNN
+F 4 "RMCF0402FT9K10CT-ND" H 5250 -1250 50  0001 C CNN "Digi-Key_PN"
+	1    5250 -1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 -1000 4950 -1400
+Wire Wire Line
+	4950 -1400 4450 -1400
+Connection ~ 4950 -1400
+Wire Wire Line
+	5250 -1400 6100 -1400
+Connection ~ 5250 -1400
+$Comp
+L Device:R R32
+U 1 1 63141E54
+P 5400 -900
+F 0 "R32" V 5193 -900 50  0000 C CNN
+F 1 "1.2k" V 5284 -900 50  0000 C CNN
+F 2 "MultiSpectLED:R_0402_1005Metric" V 5330 -900 50  0001 C CNN
+F 3 "~" H 5400 -900 50  0001 C CNN
+F 4 "RMCF0402FT1K20CT-ND" V 5400 -900 50  0001 C CNN "Digi-Key_PN"
+	1    5400 -900
+	0    1    1    0   
+$EndComp
+Text Label 5550 -900 0    50   ~ 0
+GND
+Wire Wire Line
+	5250 -1100 5250 -900
+Wire Wire Line
+	5250 -900 4950 -900
+Connection ~ 5250 -900
+Wire Wire Line
+	5600 -800 5800 -800
+Wire Wire Line
+	4950 -700 5150 -700
+Wire Wire Line
+	5150 -700 5150 -500
+Wire Wire Line
+	5150 -500 5300 -500
+Connection ~ 5300 -800
+Wire Wire Line
+	5300 -800 4950 -800
+Connection ~ 5300 -500
+Wire Wire Line
+	5300 -500 5600 -500
+$Comp
+L Device:R R1
+U 1 1 632DD36B
+P 5600 -650
+F 0 "R1" H 5670 -604 50  0000 L CNN
+F 1 ".5" H 5670 -695 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5530 -650 50  0001 C CNN
+F 3 "~" H 5600 -650 50  0001 C CNN
+F 4 "CSR0603FKR500CT-ND" H 5600 -650 50  0001 C CNN "Digi-Key_PN"
+	1    5600 -650
+	1    0    0    -1  
+$EndComp
+Text Notes 3350 -1750 0    50   ~ 0
+TODO: cut off Vin when enable is low
 $EndSCHEMATC

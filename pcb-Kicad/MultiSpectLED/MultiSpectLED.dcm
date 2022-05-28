@@ -24,6 +24,10 @@ K LED diode pad
 F ~
 $ENDCMP
 #
+$CMP PAM2841
+D IC LED DRVR RGLTR DIM 1.5A 8MSOP
+$ENDCMP
+#
 $CMP R
 D Resistor
 K R res resistor

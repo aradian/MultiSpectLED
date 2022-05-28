@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name MultiSpectLED)(type KiCad)(uri ${KIPRJMOD}/MultiSpectLED.pretty)(options "")(descr ""))
+  (lib (name YC158TJR-0710KL)(type KiCad)(uri ${KIPRJMOD}/YC158TJR-0710KL.pretty)(options "")(descr ""))
 )
